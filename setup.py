@@ -42,7 +42,7 @@ def resolve_slurm_libs_incs():
     slurm_include = os.environ.get(SLURM_INCLUDE_ENV_VAR_NAME, False)
 
     if slurm_lib is False:
-        slurm_lib = "{}/lib".format(DEFAULT_SLURM_DIR)
+        slurm_lib = "{}/lib64".format(DEFAULT_SLURM_DIR)
 
     if slurm_include is False:
         slurm_include = "{}/include".format(DEFAULT_SLURM_DIR)
